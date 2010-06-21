@@ -1,0 +1,5560 @@
+<style>
+body {
+  margin-left: 1em;
+}
+
+.container {
+  position: inherit;
+  width: 100%;
+}
+.nick {
+ position: relative;
+ float: left;
+ width: 8em;
+ 
+ color: blue;
+}
+.text {
+  position: relative;
+
+  width:auto;
+}
+
+.red {
+  color: red;
+}
+</style>
+
+<p>
+ <a href='/'>back</a>
+</p>
+
+<div class='container'>
+  <div class='nick'>rizwanreza</div>
+  <div class='text red'>JOIN</div></div>
+<div class='container'>
+  <div class='nick'>bcantin</div>
+  <div class='text red'>JOIN</div></div>
+<div class='container'>
+  <div class='nick'>bcantin</div>
+  <div class='text'>mornin</div>
+</div>
+<div class='container'>
+  <div class='nick'>bcantin </div>
+  </div>
+  <div class='text'>babot :!site</div>
+</div>
+<div class='container'>
+  <div class='nick'>neXter_</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>rizwanreza</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>rizwanreza</div>
+  <div class='text'>babot :!link</div>
+</div>
+<div class='container'>
+  <div class='nick'>rizwanreza</div>
+  <div class='text'>babot :!site</div>
+</div>
+<div class='container'>
+  <div class='nick'>rizwanreza</div>
+  <div class='text'>babot :!forum</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>babot: log</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>!log</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>doesn't do that yet, eh locks? :)
+</div>
+<div class='container'>
+  <div class='nick'>andain</div>
+  <div class='text'>!hello :)
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>!forum</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>that works :)
+</div>
+<div class='container'>
+  <div class='nick'>andain</div>
+  <div class='text'>!forum</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>andain</div>
+  <div class='text'>yay</div>
+</div>
+<div class='container'>
+  <div class='nick'>bcantin</div>
+  <div class='text'>cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>BTW, in case anyone missed it last night</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>http://rubymendicant.com/submissions/new</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>send that out to your friends if they missed the pre-reg</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I've announced that now, so you can RT it or whatever</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it does seacreature, but only shows to me :P</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it's pretty stupid anyway</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>just logs the raw message</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>locks: that's all we need.</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>If you give me the source I can hook it up to the RMU app</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>http://github.com/cschneid/irclogger also, I found this for anyone with more pacience</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>http://gist.github.com/443565</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>locks: please make that private</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>it includes the password</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>oh</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>my bad</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>https://gist.github.com/233fd90e99bc57967728</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I can work with this. I basically just want to create a little JSON logger that then spits that out to the RMU app over RestClient</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I'll just replace your db calls with that</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>and then I can give us a nice little time range filtered log</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>cool :)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>cinch has some... weird stuff</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I might also look into whether there are any off the shelf javascript irc clients or anything like that</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>Hey, guys. Do you have problems accessing Google Groups ?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>nope</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>mitkok: no, sorry</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>I hit Google Groups, when I try to enter some group it keeps redirecting. Weird</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>Oh, it's Google Chrome problem</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Oh, That's the google redirect loop of death</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>It happens occasionally. Whenever Google wants to show you they're the boss</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>First time for me :)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>there's always the first</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>youtube on a roll, denied me two videos out of two</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>I prefer Viddler</div>
+</div>
+<div class='container'>
+  <div class='nick'>colin___</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>colin___</div>
+  <div class='text'>PART</div>
+</div>
+<div class='container'>
+  <div class='nick'>colin___</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>soulim</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>soulim</div>
+  <div class='text'>babot :!site</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>babot</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>PART</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>bot.
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I'd love to be live tweeting from The Compleat Rubyist, if not for the giant fucking fail whale</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>ooh, magic, it went away!
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>the list has a crapload of chatter</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>hard to keep up, even</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>locks, yes, it is motivating me though to create some apps to organize the information better</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>anteaya: If you build something temporary, we can integrate it into the RMU app later.
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>and having a 'crapload' is good since you have more data to work with and then have some beta testers for the app</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I looked at things like Ning but got frustrated at all the things we *dont* need</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>yeah, no I think you made the right choice</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>stripped down, universally accessible</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>with a group this size there is just no 'one size fits all' option</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>But I want to add the ability to create a focus group inside of the app and then have it create a mailing list for you</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>and you'd also be able to post some resources or something there</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>we have to be content with 'one size fits most' and those who are the most discomfited by it are encouraged to create a solution</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>might even solve the 'I don't know what to work on' problem</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>seacreature, sounds cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>There is just too much creativity going on and not enough time to catch up with it :)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I am monitoring the #heroku channel as well and I saw part of a conversation last night about uploading resources to an heroku app and one of the chat participants was encouraged to move away from heroku to amazon if uploading resources such as avatar images for users was an important part of the app</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>makes sense</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>seacreature, yea, that is true, the same sentiment was expressed in #ruboto last night</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I'll tell ya, when headius is frustrated when he can't keep up then I know we are all drowning</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>:D</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>anteaya: I assume that's at volume though.
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I don't know</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>We are going to stay small.
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Besides, we could use gravatar or something like that</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>true, I'm curious what omniauth has to offer</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Once we have a scaling or deploy infrastructure problems, I'll basically beg some friends and get us some heavy dedicated metal</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>would be cool to use it if we can since James is in the course and he is an author</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>there we go</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>thank goodness for friends with metal</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>:D</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Right now I'm doing heroku because we have deployment specialists on my team, so I never learned to do anything except type cap deploy :)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>omniauth sounds like a pretty good idea</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>and heroku is plenty good for most things</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I have not looked at omniauth, but I'd be curious how it compares to authlogic:andain!andain78.84.180.195 <span style='color: red'>JOIN</span>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>seacreature, I agree with your choice of heroku, it is a good first start and lets us concentrate on the app and not the deployment</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I have burned many development hours working hard so that I could type 'cap deploy'
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>and servers are so diverse, that would be an entire course right there</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>thank goodness heroku makes it so easy to get something up</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>heroku <3</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>couple of hours and I can have something up and running:chipiga!5c715544gateway/web/freenode/ip.92.113.85.68 <span style='color: red'>JOIN</span>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I think it's awesome that building our university is basically a hard enough programming program that we don't need to actually study outside of that :)
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Also reinforces the cult idea.
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>We code at RMU for RMU to support RMU</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>and then, SkyNet was born</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>Has work started on that? I'm afriad I've fallen behind on the mailing list</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>haha :p</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>volundr: wanna see a rough sketch of the AI?
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>Howdy locks... I see you got your bot working</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>sure</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>rather rudimentary, but it is</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>working well enough to accost me as soon as I <span style='color: red'>join</span>ed ;-)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I think one of the links is still wrong lol</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>the forum</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>babot :!forum</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya_</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>my rubygems is a huge mess</div>
+</div>
+<div class='container'>
+  <div class='nick'>bcantin</div>
+  <div class='text'>locks: have you tried RVM ?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it only gets that much more confusing</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>at least for now</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>that another good focus group</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>setting everything up</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>correct link is http://groups.google.com/group/ruby-mendicant-university----general</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>I dunno, I find RVM pretty straightforward</div>
+</div>
+<div class='container'>
+  <div class='nick'>bcantin</div>
+  <div class='text'>i found that using gemsets can help too</div>
+</div>
+<div class='container'>
+  <div class='nick'>bcantin</div>
+  <div class='text'>bundler helps out a bit too</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>never used bundler</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>is babot recording? or just handing out links?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>rekording</div>
+</div>
+<div class='container'>
+  <div class='nick'>bcantin</div>
+  <div class='text'>nice locks</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>flat file? or DB?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>sqlite</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>but one table, one columns</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>the raw message</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>awesome... do you have the source on github?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I'll link you in a bit</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>hmm... that seems less than ideal :-P</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>well, bite me :D</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I was wondering if I could put it up with a sinatra app</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>so it'd be easy to push the .db</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>huh, it looks like cinch doesn't give an easy way to get at the sender of a message</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it does</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>m.nick</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>https://gist.github.com/233fd90e99bc57967728/9e219d98cee5aa0602d3d614a5f4379bcb3eecd9 here it is</div>
+</div>
+<div class='container'>
+  <div class='nick'>babot</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>hey there babot :)
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>*GASP* hard coded configuration?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>!:O</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>oh no.
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>Looks like it does the job</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>now you need to teach him to build Markov Chains off those logs so he can spam the room with nonsense ;-)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>haha, maybe not</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>Probably for the best, I'd be a little afraid he'd become a better programmer than me</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>locks: can you make it so that babot doesn't private everyone when they connect</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>ok</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I know he wants to get friendly with me, but that's only useful like the first time ever</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I'll make him smarter, eventually</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>couple of mins and I'll reboot him</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>hello</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>greetings codemanki</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki</div>
+  <div class='text'>anteaya hi!
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>your in the ukraine, right codemanki</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>s/your/you're</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>yep</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>and you wanted something, or just asking?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>just asking for curiosity sake</div>
+</div>
+<div class='container'>
+  <div class='nick'>ruanwz</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I'm just curious about different parts of the world</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>okay =) Ask more if you want =)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I've never been to Europe</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>okay, so do you live in a rural or urban setting?
+</div>
+<div class='container'>
+  <div class='nick'>ruanwz</div>
+  <div class='text'>/?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>heya ruanwz</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>today I'm interviewing codemanki</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>:)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>he lives in the Ukraine</div>
+</div>
+<div class='container'>
+  <div class='nick'>ruanwz</div>
+  <div class='text'>hi, I am still trying to get familiar with irc.
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>i live in urban, mostly in the center of Kiev, capital of Ukraine =)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>that makes sense</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>ruanwz, hi</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ruanwz, I'm glad you are making the effort</div>
+</div>
+<div class='container'>
+  <div class='nick'>ruanwz</div>
+  <div class='text'>codemanki: hi</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>it can be a little confusing but it is worth it</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>codemanki, wow, there must be some amazing architecture there. I love good architecture</div>
+</div>
+<div class='container'>
+  <div class='nick'>ruanwz</div>
+  <div class='text'>I have used irc some days before. But forget the commands soon.
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I posted an irc beginner command reference: http://www.ircbeginner.com/ircinfo/ircc-commands.html</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>hm, i would rather say that Kiev doesn't have it's own style like classic European cities... http://maps.yandex.ru/-/CJUU69d this is for example where i live, i think that you will see a picture, like google streets</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I included it in the google group open source doc</div>
+</div>
+<div class='container'>
+  <div class='nick'>ruanwz</div>
+  <div class='text'>anteaya: thanks a lot.
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ruanwz, np</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>means 'no problem' which is another way of saying you are welcome</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>codemanki, I don't think my browser knows what to do with the cyrillic</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>oh..but do you see picture?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>:(
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>no</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>hm..strange</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>i see the bottom quarter of a map</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>it's UTF-8</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>do you see it mitkok?
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>of course</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>you are right, it was my fault, no script was blocking it</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I do love no script though</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>utf-8 is perfect for cyrillic based languages</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>i just thought about asking about noscript =)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>yeah, that is what it was</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>beautiful view</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>this is the street where you live?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>very cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>yes, building on the right</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>what kind of trees are those?
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>chestnut</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>chestnut is a symbol of kiev</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>they grow just everywhere</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>http://rmulog.heroku.com/ what shows for you guys?
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>http://maps.yandex.ru/-/CJUYEgc there are a lot churches in kiev . this one is a monastery, it is like 2 minutes from the center of city</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>locks, an irc log</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>sh--
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>locks: a lot of garbage :)
+</div>
+<div class='container'>
+  <div class='nick'>ruanwz</div>
+  <div class='text'>/help.
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>sessions isn't working properly, it seems</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>definitly want to split out the username and message for cleaner output</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>latur</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I will do</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>but them there's a chat log</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>is the bot itself on heroku too, or are you uploading the logs?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>pushing the db</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it would be great to put the bot up there</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'><= eating lunch</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>I have no idea if heroku will let you run generic code or not :-P I've never used it</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>nope</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>that's why I tried looking at irclogger</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>it's vegetarian, cowboy</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>how do you like it?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>but you can go ahead and put rmubot in a sinatra app :D</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>hahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>well, to be honest, I'm not sure what it is.
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>hmm... are you sure? I wouldn't trust Heroku to leave you app running where there are no requests....
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>seems the culprit was found</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>hm? it'd serve up the log</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>Right, but I'm not sure people would keep looking at the log often enough to keep the bot alive</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>ic</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>anteaya, I actually don't mind vegetarian. I pretty much eat anything that looks like food.
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>now that i believe</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>hm, taps refuses to push my db</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>crap</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>could add a new command to the bot instead of hosting it on a web page</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>!recap 2 hours</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>that's the direction I was headed with mine</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>codemanki, sorry about that, had to eat my lunch while it was hot</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>np =) i hope it was tasty =)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>veggie burger, with great cheese from kensington market and green peppers</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>it was</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>=)
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>anyone else from Europe ?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>where were we? chestnut trees and a monastery</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>there are many brazillian guys accepted</div>
+</div>
+<div class='container'>
+  <div class='nick'>babot</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>babot</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>anteaya: wow =)
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>it works!
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>yup</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>tnhx =)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>and when my username is correct, it appears in red and if the chat client doesn't have focus, it blinks in my status bar, so I know you are calling me</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>np</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>(sorry for the hijacking) so, the log bot is running on my machine, but I have to get going</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>so byebye logs :P</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>nice attempt locks</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>does it show up the little 'login'?
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>later locks... FYI I have a home server and some work severs I could run it from</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>yes it does</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>koolios</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>locks I get a text input field with a default value and a button</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>that's it</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>clicking the button returns me to the same screen</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>the secret is 'rmu1337' like the channel</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>boy is that in need of a filter</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>but there it is</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>yep, it's basica as basic gets</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>well done, locks as least you have some data to work with</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>https://gist.github.com/233fd90e99bc57967728 here's a couple hours work</div>
+</div>
+<div class='container'>
+  <div class='nick'>phiggy</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>ttyl guys</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>guys, what editors do you use</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>vim</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>vim or gedit with plugins</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>mitkok: vim</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>sweet</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>i have my setup on github if you wish</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>I'll take a look</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>vinibaggio, link?
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>http://github.com/vinibaggio/vinibaggio-vimfiles</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>it's for my usage, so don't expect full documentation :P</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>but if you wish any info, i can help</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ta</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>:)
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>hehehe</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I like looking at config files</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>my vimrc is somewhat documented, so you can have any idea on the rationale</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>but if you have any doubts, feel free to ask me :)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>well I'm pretty clear on how you feel about folding</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>man, i hate folding</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>me 2</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>hahahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>lol</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>" No folding! I hate folding!
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>set nofoldenable</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>and thanks for the direction to vimcasts: http://vimcasts.org/
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>:D</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>it made my todo list</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>oh vimcasts is amazing</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>didn't know about it before now, so gracias</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>de nada :)
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>Just saw the Campfire vs IRC discussion</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>actually I was thinking about creating a chat system for RMU as "an excuse" to use websockets :)
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>hahaha, we're on the same there.. still didnt get an excuse to use websockets :(
+</div>
+<div class='container'>
+  <div class='nick'>babot</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>WB locks</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>ty</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr </div>
+  <div class='text'>babot :!forum</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr </div>
+  <div class='text'>babot :!forum</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr </div>
+  <div class='text'>babot :!slap locks</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>does anyone do textmate here?
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>i do textmate</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>but I'm not a power user</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>I don't use code completion etc</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>hm, I'm trying to add syntax highlight to a tmbundle of mine</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>you don't happen to know any helpful resources?
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>not offhand</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>looks complex though</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>http://manual.macromates.com/en/themes</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>http://manual.macromates.com/en/language_grammars.html</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it is :/
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>Dr.Nick has really good posts about TextMate and TextMate Bundles - http://drnicwilliams.com/category/textmate/
+</div>
+<div class='container'>
+  <div class='nick'>codemanki</span> <span style='color: red'>JOIN</span>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>them be good posts thou not very helpful atm</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>TextMate is a huge mess</div>
+</div>
+<div class='container'>
+  <div class='nick'>mitkok</div>
+  <div class='text'>Vimmmmmmmm :)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>Vim is a huger mess.
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>;)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I move that as a house rule, editor wars (or other wars) take a maximum of 5% of the conversation</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>that way you get to enjoy a bit of a bicker, but the rest of us don't have to endure it for long</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it's not a war, don't worry</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I love vim/TM</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>hahahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>unfortunately I'm not exactly a power user :p</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>neither am I</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I just wanna figure out how the bloody hell I do this</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>mostly I learned it so that I can tunnel into servers</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I wanted to feel comfortable in a command line only environment</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>vim is awesome</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>so I know enough to get done what I need to get done, but I won't win any competitions</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it's where I do most of my hacking in my netbook</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>yeah, I can move around but that's about it</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I'm going to take a look at the vimcasts when I get a window</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>anteaya -> http://www.swaroopch.com/notes/Vim</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ta</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>great little book</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I love well formatted instruction</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>my thanks</div>
+</div>
+<div class='container'>
+  <div class='nick'>babot</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>hoy volundr :)
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>howdy</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>locks, indeed</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>volundr, you're up</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>yup athough someone didn't wake me</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>wasn't a full hour yet</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>figured you needed your beauty sleep</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>well if I'm expected to be beautiful it's going to take a lot more sleep.
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>crap, I screwed my TM</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>hahahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>how do you screw your TM</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>thought is was unscrewupable</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>overwrote Ruby language</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>as a selling feature</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>now that is an accomplishment, how on earth did you manage that?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I was [supposedly] writing on my bundle</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>but it seems I wasn't</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>on your bundle?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>where did you write to?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>to the ruby bundle</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>do you mean you overwrote your ruby source code?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I was checking it out for inspiration</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>how did you give yourself the permission to do that?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>no, I overwrote the language grammar code</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>because I had both open</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>you were scoping the language source code and you changed the file?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>yeah, basically</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>and you were sudo at the time?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>wow</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>wait</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I was editing my tmbundle</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I don't know what that is</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>well, it's like a plugin</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>and it has a language grammar for syntax highlight</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>well that's not so bad then</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>well uninstall and reinstall the plugin</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>should be easy</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>hopefully I just need to reintall the plugin</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>should be</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>it's not like you overwrote the ruby source code</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>no, not that</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I'm not that skilled yet ;p</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I hope you never get that skilled</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>Bah overwriting the Ruby source is easy</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>over writing source is just a mistake</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>it's overwriting it so that it works that's the challenge</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>are you speaking from experience, volundr</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ah yes, there's the point</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>searching on spotlight crashed my Finder</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I should chuck this laptop out</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I don't know what those terms mean</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>Finder -> explorer</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>but if you are looking to ditch your hardware, you are welcome to send anything to me</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>spotlight -> osx search</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>::shrug:: I tend to use apt-get or synaptic</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>or grep or locate to find installed files</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I'll use any hardware you don't want anymore</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>hurray, ruby's back</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>http://github.com/locks/arqcp-tmbundle I was messing around with this</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>for an assembly course</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I really like it</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>tho</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it was hella fun</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>I had to learn assembly for an EE course... it beat circuit design, but I like Ruby better</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>glad you have it working again</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>heck... I ALMOST like VB better</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>so your laptop is safe from being chucked for yet another day</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>volundr: the particular assembly we used seemed rather, hm, easy</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it has really clean syntax</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>there are different flavours of assembly?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>thought there was just one, assembly</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>every CPU family has it's own</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>^-- what he said</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>okay</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>so intel has it's own</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>and 16 bit and 32 bit and 64 bit each have their own?
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>oh it's worse than that</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>http://github.com/locks/arqcp-ptsc/blob/extra/extra/D_prisioneiro/ex_d_2_moodle_res.s example</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>anteaya: pentium 1 has one, p2 another</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>etc</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>the i386 has a different assembly from the i486, and the i686, etc, etc.
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>everytime the architecture changes you have to write a different compiler/wtvr</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>mine was PTSc Ignite</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it's a risc processor I think</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ick</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>the teachers give us some decades java emulator</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it's a pain in the ass</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I wrote a spiffy batch to handle everything, but lost it meanwhile</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>have you ever installed Gentoo from a stage3 tarball?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I'm just looking into arduino so that I can get a sense of the hardware</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it's not like I have the course anymore, but I like sharing and leaving something behind</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>haven't considered learning assembly</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>volundr: sorry, I'm not a masochist :P</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>bah, I like Gentoo</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>anteaya: assembly is great for the different perspective</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>have I ever installed Gentoo? no I haven't, I tried to install Arch Linux once on a vm but I didn't get very far, I got distracted and didn't get back to it</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>you almost have to think inside out</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>yeah, I a currently taking another run at understanding bitwise and I have found a better source this time</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>in Gentoo, you have to tell it your processor family... what your doing is picking the assembly that gcc will compile too</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>rather than 'trust me' it is explaining how the bits are affected, so finally it is making sense</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>volundr, that is cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>http://github.com/locks/arqcp-ptsc/blob/extra/extra/A_prisa/ex_a_3.s (3+2)-(3-5) \m/
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>Building Gentoo is an experiance ever Linux user should have at least once</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>but you would have to have part of Gentoo running in order to get the processor info would you not?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>as in `lspci`
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>When you download the Gentoo CD, what you get is a very minimal live CD that gives you just enough of an enviorment to format your disks and compile your kernel</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>volundr, thanks for the direction, sometime when I have a window I may fire up the vm and take it out for a drive</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>window = space of unassigned time that I can devote to making it work</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>For the first time, plan on it taking at LEAST a day... but I know I learned a LOT from the expierience.
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I tried installing slackware</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>about 10 years ago</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>a bit less, I think I was 15</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>and... yeah, not happening</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>cool volundr thanks, I'll add it to my todo list</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>Slack is quite a bit easier these days</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I've revisited</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>but for a first experience</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it was quite harsh</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>thankfully there was a second computer around</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>the irc chan was useless</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>but a friend of mine tried guiding me, best as he could</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I gave up on the second day lol</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>Gentoo has very good instruction, but it still helps if you understand a bit about the GCC toolchain and managing disks with parted</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>my first experience with linux, I had no idea how to use the command line</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>pft, get ubuntu and get on with your life</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>it took me a week to get my modem working since I only had dial up</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>this is ubuntu I'm talking about</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>heh no one does on their first experience... if you don't already you really do need a good grasp of the command line before attacking Gentoo</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>haha :P I never got network working quite right</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I had to go over to my windows on the other side of the dual boot and talk to the mailing list to find out what drivers I was missing and install them</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>those cats had patience, over 50 emails in that thread</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>but I got it</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>actually locks I generally reccomend Ubuntu for general use, but you won't learn NEAR as much about Linux from Ubuntu</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>ofc</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>and you'll never milk the performance out of Ubuntu as you can Gentoo</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>ubuntu is great for 'mainstream' and just working</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>and for me, since I can't be bothered lol :P</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>indeed, and for ease of maintanence, which is where I think Gentoo really falls down</div>
+</div>
+<div class='container'>
+  <div class='nick'>volundr</div>
+  <div class='text'>Alrighty gentlemen and lady... time for me to head home</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>volundr, later</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>bubye</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>he goes and i get back</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>bye!
+</div>
+<div class='container'>
+  <div class='nick'>lolocks</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>lolocks</div>
+  <div class='text'>irssi is so weird</div>
+</div>
+<div class='container'>
+  <div class='nick'>lolocks</span> PART</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>locks, is lolocks related to you?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it was me from irssi</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>what is irssi?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>an irc client</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ah</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>it is starting to get dark out there and it is early yet, might be fixing to rain, going to get another walk in before it does</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it's kinda like vim, in that it as a steep learning curve</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>at least from experience</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>back in a bit</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>alrighty</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ah okay, I'm kind full on steep learning curves at the moment, I'll have to take a pass on that one</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>so very true</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>easy road all the way</div>
+</div>
+<div class='container'>
+  <div class='nick'>babot</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>bcantin</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>andev </div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>babot</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah, i agree</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>btw, i'm watching a talk that Raoul linked on the TDD focus group, pretty interesting</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I have the pragprog rspec book</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it's useful too</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>hey there all</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>hey rfelix</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>vinibaggio: yeah, i enjoyed those videos</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>even though they're from a while back</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah.. thanks! I was reading a lot about dependency injection lately</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>have u guys read Ruby Best Practices?
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>and the example is pretty cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>i have to say that i've begun reading it, but still didn't finish</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>i also didnt really finish it (skipped a chapter)
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>but read most of it, and for a beginner in TDD, i also found the chapter on testing was useful</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>not really, rfelix</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I skimmed the first chapters</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>have yet to read the rest</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah.. i had to stop because us the company i work were doing a discussion on a book that i still havent read so...
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>what didnt u like about chapter 1 locks?
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>vinibaggio, that's cool Hope to find a company to work for that does stuff like that</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I didn't dislike anything, but I haven't had much reading time</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>ah, sorry, misinterpreted, though u meant "not really" as to the chapter being useful :)
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>thought*
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>rfelix: yeah, it's pretty cool indeed!
+</div>
+<div class='container'>
+  <div class='nick'>codemanki</span> <span style='color: red'>JOIN</span>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>!log</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>babot: help</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>!help</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>!forum</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>he knows that one :)
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>locks: is your logger running?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it is</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>sorta</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I have no idea how to put it in a sinatra app (if it's even possible with cinch)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>but I can tweak it to register timestamp etc, instead of raw</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Oh, well I'm going to rip out your raw code and run it on my VPS later</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>so that it just feeds the RMU app via a service API i'll build</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>ok</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>How often is this updating?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it puts every new message on the db</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>and I'm pushing the db manually to the webapp</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>locks: can you set up a cron task to do that every few minutes?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>or even just use every()
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>or hmm... what was the name of that...
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Can't remember. There is a Ruby interface to cron, though</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>http://github.com/javan/whenever</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>ah sweet</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>well, dunno if it's running</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>but I think it's setup</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>haha it sent me an email</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>seacreature: hi, are you here?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>codemanki: sup?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>oh, I saw your pm</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I'll take care of the duplicate.
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>yep. thanks!
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>done</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki </div>
+  <div class='text'>ok =) thanks!
+</div>
+<div class='container'>
+  <div class='nick'>tehviking_</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>quiet around here today :p</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>hahaha yeah</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>tons of articles to read, there's still some keynotes from rails conf to watch... tons of stuff to do :(
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>It's the weekend. Folks should relax</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>sustainable pace and all</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>(says me, who is currently teaching a training session to 15 or so people ;)
+</div>
+<div class='container'>
+  <div class='nick'>chrisdinn</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>codemanki</span> <span style='color: red'>JOIN</span>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>seacreature: hahaha sure... I usually work a lot during the week, so my relax is the catching up on blogs, twitter and all</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>vinibaggio: I used to do the same but then found that a strict no computer rule for at least part of the weekend is a good idea.
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I usually work Sunday nights, but Friday night to Saturday I force myself to refresh</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah, you're right</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>blogs and twitter can be really compulsive</div>
+</div>
+<div class='container'>
+  <div class='nick'>rizwanreza</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>and overloading on information really harms your creativity</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I've found much better the process of, read a little, build a lot, repeat</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>But when I was relatively new to Ruby I was plugged into the firehose all the time</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>A certain amount of information overeating does provide you with a broad sense of what's out there :)
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah, you try to learn a lot of stuff, absorb really little and in the end you actually lost precious time</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I try to look at it as a sort of direction-finder</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>if I'm not sure what to work on, I will start to soak up different sources</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>until something catches me</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>then I shut off and go heads down</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>until I lose interest :)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I try to find something I want to learn and then focus on that</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>like sinatra</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>heheheh that's right</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>well guys, bbl, gonna eat</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I will be trying to encourage that in the RMU program</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>"ok, now a simple webpage", "now let's add sessions", "ok, want to check out mustache" etc</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>We will only really look at 3 problems</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>but we'll explore all the interesting things around the edges</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>cool :)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>one problem per week then?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Yeah, plus the 3-week long individual project</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>and the 3 problems are group oriented?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>No, that's not what I meant</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>ok</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>individual project means the project that you or a group have proposed to work on</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>The three other problems will be ones I come up</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I haven't decided yet whether you'll work in groups on those or not</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>probably at least one will be a group exercise</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>and the final exam will be individual</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking_</div>
+  <div class='text'>thanks for the tip on the koans BTW: I am still working through them</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>The triangle stuff was exactly the kind of thing I need at my level</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>in fact most of it is exactly right</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>i was very confused about blocks until this morning</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>now just a little confused</div>
+</div>
+<div class='container'>
+  <div class='nick'>bcantin</div>
+  <div class='text'>it REALLY sucks when a server crashes for no reason</div>
+</div>
+<div class='container'>
+  <div class='nick'>bcantin</div>
+  <div class='text'>it is WORSE when you hear unfamiliar noises....
+</div>
+<div class='container'>
+  <div class='nick'>bcantin</div>
+  <div class='text'>pleaseworkpleaseworkpleasework.....
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>noises are not good</div>
+</div>
+<div class='container'>
+  <div class='nick'>bcantin</div>
+  <div class='text'>and my uptime was at 350 days</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>don't like the use of the word 'was'
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I have to take seacreature's advice and unplug for a bit</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>talking about being plugged, i've seen a lot of fuzz on rubininus... Expect for the prettier stack trace and precompiled code, do you know any other advantages?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it has a pretty stack and precompiled code O:)
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>execpt*
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>ohh... except*
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>hehehe</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I don't think there's much else</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it's pure ruby, but that's a bit beside the point</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>well, almost pure iirc</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>uhun</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>only C++ if it's kinda impossible otherwise</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>that's cool, to better understand ruby by reading ruby</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>i tried to understand the C ruby code, but my C skills are pretty much gone:andres-fc</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>yeah, the C++ code is used to bootstrap the virtual machine</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>get minimum functionality to then do the rest in ruby</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>nice</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>vinibaggio: have u seen the Ruby Hacking Guide that David mentioned in the Metaprogramming focus group?
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>http://rhg.rubyforge.org/ if you haven't</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>i got the link but i didnt give a look on it</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>I just reap a bit of Chapter 2</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>read*
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>and it seemed pretty awesome</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>because it explained how the C code works</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>so if u have C knowlegde</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>cool!
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah, a bit</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>it's a good starting point I guess</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah, it will help</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>thanks</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>much better than getting all the C code that makes the Ruby VM and not knowing where to start</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>hehe :)
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>it's a pitty that it isn't finished though...
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>wish I knew japanese so I could read the original book</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah... but as mentioned earlier, i still have a lot to learn so i have to prioritize... and i think rubinius will make things easier ;D</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>for sure</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>so many things to learn... so little time =P</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>sadly</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>but that's fun, or else i think many people would be bored to death :P</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>true</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>including me :P</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>and the other thing is that the ruby community specially likes to write and share, so we aren't on our own mostly of the time</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>or else we would take a LOT of time to learn about stuff</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>yeah.. that's true</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>I'm really glad I learned Ruby especially because of the community</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>people do some really great stuff</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>and with all the sharing...
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>it pretty cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>it's*
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>that's awesome</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>even here in Brazil, we have the same spirit on our user group, it's pretty cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>sweet</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>i didn't see much on the python community, at least here, so people weren't as engaged as i can see on ruby</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>I don't think Ruby in Portugal has really hit off...:andres-fc you're lucky to have a local user group</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>yeah:andres-fc I'd wish there was one here :(
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah, well, it's not a local user group, i normally travel 200km to get to it but well, it's doable</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>and man</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>out of all the people I know at university, only myself and another 2 people program in Ruby...
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>it makes a huge difference:andres-fc I bet</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>200km is still a bit</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>but i'm sure it's worth it:andres-fc I'd gladly do it</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>at least we all have RMU now :)
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>\o/
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>even though in person it would probably be a lot better:andres-fc I only know another person at work who does Ruby and actually cares about programming:andres-fc for the rest it's just a job, you know?
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>I do</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>and it makes me sad...
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>lol:andres-fc I know haha</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>that's sad indeed</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>i'm pretty lucky to work where i am now, people are very good... but i was in your position before...
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>go RMU \o/
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>hehe</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>;D</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>there's an interview</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>with Gregg Pollack</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>he says how he'd founded Orlando ruby user group... if you think you may have a shot, it's on Coderpath</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>podcast:andres-fc interesting:andres-fc I'll take a look :)
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>he says that he didn't know rubyists so he went to other programming-related user groups</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>and said</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>"well do you guys wanna learn ruby/rails? <span style='color: red'>join</span> me!"
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>ahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>so he mostly converted all the first attendees</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>:P</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>well that's one way to do it! lol</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>and he's been pretty successful :D</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>sorry</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>it wasn't coderpath</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>it's teach me to code</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>http://teachmetocode.com/podcast/
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>rfelix: portugal?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>tsk, tás na mailing list do ruby-pt?
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>yep</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>mailing list nao</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>RSS do site</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>http://groups.google.com/group/ruby-pt?lnk= <-
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>we better write EN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>where you from?
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>mais pessoas que falam português, não estou só \o/
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>hehe</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>lol</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>from lisbon</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>way too far, porto here</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>we had a ruby meeting last year</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I couldn't attend tho</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>had to be :)
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>I'm from Brazil</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>but a guy from my college does rails</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>he even did a screencast about something</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>http://jose-mota.net/2009/08/screencast-de-ruby-on-rails-em-portugues/
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>portugues de portugal ;P</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>thanks for the links</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>gonna check 'em out</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>locks: it doesnt seem like much is going on over at the ruby-pt group</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>but thanks nonetheless, i'll be keeping my eye on it ;)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it comes and goes</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>just say the Agile PT conference thing...
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>u going?
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>damn... wish I had known sooner... might've been able to go</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>nope, exams and it's a bit expensive</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>for students its 55, which is ok compared to €195 and €254</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>but yeah.. exames... terrible..
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>where u studying?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>isep</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>cool! what year r u in?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>third but I won't finish until next year</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>what about you?
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>i'm at ist, my 2nd and final year of my masters</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>when u finished, do u plan on working or continuing with your msc?:andres-fc rfelix: what's your masters on?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>vinibaggio: just to mention about Rubinius</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>it is a fantastic research platform</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>it's where FFI, RubySpec, and a lot of cool stuff came from</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>also, because implementing algorithmic code is easier in Ruby than in lower level languages, they've been able to experiment with performance improvements that provide order of magnitude improvements</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>which then get adopted by the other implementers</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>So Rubinius is really just a way to open up the process of defining and implementing the language to the community as a whole</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>the benefits trickle down to the interpreters we actually *use*
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>andres-fc: i'm majoring in distirbuted computing, and my thesis is titled "Scalable and Efficient Discovery of Resources, Applications, and Services in P2P Grids"
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>seacreature: wow, that's pretty amazing, thanks!
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>i already knew about FFI and rubyspec but i didnt know they came from rubinius</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</span> PART</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>seacreature: thanks for the... update? i dont know if it's the right word for it...:andres-fc seacreature: Do you think it's more worthwile (for us and for the project) to help out Rubinius or RubySpec?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>andres-fc: either is a great idea</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>we may use RubySpec in the actual course</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>we'll see:andres-fc rfelix: That thesis sounds like a very good read</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>i think you're the first person to say that...
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>lol</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>lol</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>the title is a mouthful... took me a while to get it right</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>lol:andres-fc hahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>i think it's a necessity for academic projects, IMHO:andres-fc part of the culture, I guess</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>yeah, it's actually been a pretty cool experience</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>reading all the scientific papers of other systems</div>
+</div>
+<div class='container'>
+  <div class='nick'>vinibaggio</div>
+  <div class='text'>yeah</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>there's a lot of stuff out there</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>although... truth be told.. some of the papers are really boring!:andres-fc I hear ya:andres-fc Some people forget that it's not enough to present their ideas, they have to do it in a way that's compelling, too.
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>that's true</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>communicating is a very important aspect of our craft</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>especially in a clear, and concise manner, so as not to bore the hell out of people :)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>communicate the _why way</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>ah.. _why... it's a pitty he dissapeared (hope he's ok):andres-fc I came in late to the _why party, but from what I understand, he's fine.:andres-fc It seems that he just decided to pull everything down because some people were getting close to his real persona.
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>I guess that's his call, although i think the Ruby community lost an important member (and whacky one :):andres-fc No doubt:andres-fc It made me happy when I read he used linux for ruby hacking</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>haha ;)
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>which flavor do u use?
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>(of linux):andres-fc I'm a wimp, I'm using Ubuntu:andres-fc But if I could, I'd be using minilinux</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>why a wimp? Ubuntu is cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>(especially seeing as my fellow country-man started it - Mark Shuttleworth):andres-fc I really like Ubuntu, but it doesn't have much hacker-cred:andres-fc I'm half-joking when I say I'm a wimp :p</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>loool :) hacker cred? i think nothing beats gentoo:andres-fc I haven't tried that one:andres-fc there was a friend who loved it religiously tho</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>lol</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>i know a guy that spent something like 2 days compiling everything</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>KDE and the rest... yikes!:andres-fc wow:andres-fc I'm sure that's fun in itself, but I just couldn't give it that much time just for the sake of it</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>yeah, for sure</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>rather spend that time hacking away at something right?
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>not watching the computer compiling...
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>lol</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>what do u think of the new interface for ubuntu?
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>with the switched buttons and all?:andres-fc I haven't switched:andres-fc but when I saw it, it felt like treason</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>yeah, heard a few ppl say the same thing</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>only 1 so far liked it</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>but he's got a mac and uses osx most of the time...:andres-fc hah:andres-fc not biased at all</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>yeah :):andres-fc I don't really like the controls on the left of the windows:andres-fc Apple not-withstanding:andres-fc To me it just isn't good usability</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>no, you</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>i think it's just a matter of habbit:andres-fc Or maybe I'm just ... yeah</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>i also though it was a bit strange</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>but when I went mac, it become just fine</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>after a few months...:andres-fc heh:andres-fc It's really hard to know what is truly usable because we're all biased one way or another:andres-fc But regardless:andres-fc the changes felt like "me too!":andres-fc no real rationale behind them</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>yeah</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>i personally dont think what they're trying to put in the right hand side of the bar is interesting...
+</div>
+<div class='container'>
+  <div class='nick'>pleax </div>
+  <div class='text'>96.as-25.nienschanz.ru <span style='color: red'>JOIN</span>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>it's like like a windows tray icon for every application</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>yuck...
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>:)
+</div>
+<div class='container'>
+  <div class='nick'>neXter</span> -ip.net <span style='color: red'>JOIN</span>:andres-fc oh, I haven't seen that one:andres-fc but sounds like I won't like it, heh:andres-fc you know, one thing I believe was great is how the mac shows you the current application menu on a general area (top):andres-fc sadly, they patented that</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I never had much problems windows, osx, etc:andres-fc I hate software patents :p</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I got pretty used to osx in a matter of days</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>yeah, patents like that suck big time</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>and are useless</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>osx's dock is useless</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>it's +/-:andres-fc like the patent for minigames in loading screens in videogames</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>use Quicksilver quite often though</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>loool</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>pity quicksilver was stunted</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>that's life i guess</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>but yeah, I've tried other launch programs, not happening</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>andres-fc: yeah, that's pretty stupid:andres-fc I just go alt-f2 whenever I need to launch a program</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I just want the menu interface with multiple items ;_;
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>i signed a petition some time ago against software patents in europe</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>andres-fc: I also have that on ubuntu</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>but quicksilver is a bit more useful:andres-fc what else does it do?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>well, mostly eveything</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>search anything, navigate the filesystem</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>you can append notes to a text file</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>send email, tweet, actions</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>send a quick e-mail to a contact</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>my quicksilver is all borked now, tho</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>there are quite a few other plugins</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>yeah:andres-fc sounds cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>calendars, etc</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>can modify images</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>like shrink, etc</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>upload files</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>its something like Do for gnome</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>u heard of that andres-fc?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>exactly, Do is a qs clone:andres-fc haven't heard of it, nope</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>http://do.davebsd.com/
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>u might like it ;):andres-fc let's see...
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>where's the new qs repo, rfelix ?:andres-fc I think the selling feature for me would be music control</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>qs can control itunes (at least)
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>not sure locks</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>google quick search was off to a good start, but it too seems rather stalled</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>seems there's a repo over at github</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>http://github.com/tiennou/blacktree-alchemy:andres-fc sometimes I think I got old too fast, I prefer minimalist environments :p</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>me too</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>the less crap the better:andres-fc <- is using command line irc</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>irssi?
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>yeah, simplicity is important:andres-fc ircII</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>lol, havent gotten there yet</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>although i did change my blogging platform from wordpress to jekyll</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>Volundr: have you mastered cron?
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>and now use git to publish posts</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>rfelix: tsk, you didn't do your own ruby framework? ;P</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I use it fairly regularly, why?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I wanted to setup 'heroku db:push sqlite://rmu.db' as a cron</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>but I'm not having much luck</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>well the first question is, are you sure your cron job is running from the right directory?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I think so</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I created a cron.txt and added it to crontab, did I do it wrong?
+</div>
+<div class='container'>
+  <div class='nick'>rfelix</div>
+  <div class='text'>anyways guys, gotta run. it was nice chatting to all of you :) cheers</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>locks: actually the usual way to edit crontab is with crontab -e</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>oh ic</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>that will edit your personal crontab</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>your running ubuntu, right?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>not do I make sure it's running in the proper directory?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>*how</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>osx</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>the cron is running, he sent me a couple emails already complaining</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>what do the e-mails say?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>./bin/sh: /Users/locks.old/dev/rmubot/rake: No such file or directory</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I messed up the command lol</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>indeed...
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I'm kind of lazy... what I'd do is write a script like uploaddb.sh</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>that does:
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>cd /Users/locks.old/dev/rmubot/
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>heroku db:push sqlite://rmu.db</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>(or is that actually a rake task? I've never used heroku)
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>add schedule that script to run with cron</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it's a heroku gem command</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>hm lemme see</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>that way you don't even have to worry about what directory cron is working in, or providing absolute paths, your script just handles it for you</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>do I put the script on my */bin ?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>nah, just put it in your home directory... then your run crontab -e and add a line like '0 * * * * /Users/locks.old/updatedb.sh'
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>the other benifit of having a script for that is that you can test it outside of cron first :-)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>the script seems to work fine</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>excellent, so now you should just be able to change the cron.txt file you already made to a line like above, or use crontab -e to add it to your own crontab:andres-fc be back later, time to eat</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>Volundr: how do I tell him to run every minute?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>*/60?
+</div>
+<div class='container'>
+  <div class='nick'>bradcantin</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>== drawing the line</div>
+</div>
+<div class='container'>
+  <div class='nick'>bradcantin</span> anyone have any experience with ruby enterprise edition ? my app is working under 1.8.7 but not under REE</div>
+</div>
+<div class='container'>
+  <div class='nick'>chrisdinn</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks_</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>nope bradcantin soz</div>
+</div>
+<div class='container'>
+  <div class='nick'>babot</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>still not working</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>goddamn I'm a noob</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>says path does not exist</div>
+</div>
+<div class='container'>
+  <div class='nick'>babot</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>sweet, the game is on :)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>locks, who is playing this one?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>babot</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>and cron</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>:P</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>my money is on cron</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>BZZZZZZZ</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>cron lost a few rounds a while ago</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>ke</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>pt missing jabs</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>the bot is behaving very well</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>locks: sorry, back... not spending much time at the PC today</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>np</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>got a dog with pancreatitis that is pretty much taking up all my attention</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>that's tough :(
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>So when you run the script from the command line it works, but from cron it fails?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>the cron works already</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I was having some troubles with directories and paths</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I managed to sort it out :)
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>ok so all is well?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>http://rmulog.heroku.com is being updated every 10mins</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>yep</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>excellent</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>tks for the help</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>heh, I don't think I provided much, but I'll take credit anyway ;-)
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I really should do something productive, but I just can't seem to get motived right now</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>well it is Saturday, you don't have to be productive all the time</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I'm going to play some wii</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>shoot down a couple of airplanes</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>there we go</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>go wii</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>been productive enough :P</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>Volundr, I hope your dog gets better</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>Thank you... so do I... it wouldn't be so stressful except she's 13 years old and has a weak liver</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ah, that hurts</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>has she been sick for long?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>listen locks going to play with your Wii is just something you shouldn't talk about in public</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>hahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>we're all friends here</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>this is 'general' not 'public', so I'm safe :D</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>no, thursday night she wouldn't eat her dinner, we took her to the vet yesterday morning</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>what did the vet say?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I just got her to eat a little bit for the first time in 24-hours</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I hope she can keep it down</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>that she has pancreatitis and was dehydrated (a side effect). They re-hyrdated her and she seemed to perk up for a bit, but that only lasted a few hours</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>is there any treatment the vet recommended?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>13 years is hard for a dog :/
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>otherwise she's been fine?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>We have pills for the pain and pills for the nausea, and a special food that shouldn't make it worse</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>:(
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I suppose that depends on how you define fine, other than this she's done great for a 13 year old dog of a breed that generally lives 12</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>but she has a weak liver, and wears out easily</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I'm sorry</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>she's a senior lady, that's to be expeted ;)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I hope it turns out fine</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>she should be fine. The fact that she ate is a good sign, it's just stressful</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>yeah</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>my dog had a tough time a couple months back</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I thought she was soon done</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I couldn't think about anything else for a month</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>:(
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I honestly didn't think Cheyenne was coming back from the vet Friday... it was a major relief to hear that she should recover</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>oh good</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>my cat had a close call last month</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>and he's only 1yo</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I'm so glad the vet thinks she should recover</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>urinary tract infection, I took him to the vet just in time</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>yeah, pets can hide their health symptoms for quite a while</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>heh, cats have a tendency to have close calls, they aren't kidding when they say they have 9 lives</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>ugh those are never fun</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking_</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>So how is your hockey team doing anteaya? Any good fights lately?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>Volundr, time off, golf season</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>by mutual agreement, I stay off the course and my team mates are grateful for my consideration</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I sound like I'm not co-ordinated but I am</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I just don't like golf</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>haha :P</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I tried golf once, but my divots had a tendency to go futher than my balls</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>golf needs coordination? ;)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>walking, yoga, tai chi, curling, biking, swimming those are my sports</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>Golf is one spot that I've never understood how anyone enjoys</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I never played golf, but I have to try it</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>oohh yoga, also want to do that</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>meh, my brother in law is really really good</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'><---- lettered in swimming twice in High School</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>he gets frustrated with me</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>Volundr, what was your stroke?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>locks, yoga is fun, I am rusty, I need to get going again</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>50/100 free and 100 breast</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>Volundr, nice</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>we didn't have a pool where I grew up, so when I got to University, I didn't know enough to <span style='color: red'>join</span> the swim team</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I also often ended up doing 100 butterfly, but that wasn't because I was good at it, I was just 1 of 2 that could finish it :-P</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>so I lifeguarded and played waterpolo</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>hahahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>yeah, the fly</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>Reverse for me, I grew up around pools, swam all through high school... and then my University didn't have a swim team</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>we used to do that for waterpolo practise</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>not because we needed the stroke, it just wore us out fast</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>shame</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>Oh yeah, the butterfly is murder</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>did you play a different sport at university?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>to be fair, I don't think I ever actually did the butterfly, I think mine was more like the moth</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>we were never timed for our fly, we just had to complete the distance</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>hahahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>no, no sports in college for me</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>probably just as well, I was too busy working nights/weekends</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I have forgotten the rules, but as long as arms move together and legs move together, I think that qualifies</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ah, what did you do?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>For the first couple years I tested printers for HP (weekday nights, 40 hour week) then I spent 2 as a Security guard, 1 year weekend nights, one year weekend days</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>fun or boring?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>The security gig was perfect, gave me 20 hours a week where I didn't have anything to do and got paid for it</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>nice</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>got almost all of my homework done at work</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>actually I loved both of them... at HP the job was boring but the people knew how to have fun, at Security the job was boring, but I'm good at entertaining myself :-)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>sounds very good</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>One time at HP we build suits of armor out of paper boxes and had jousting tournaments with brooms and rolling chairs ;-)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>hahahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>uilt*
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>HAHAHA</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>built*
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>Grrr</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>how did your steed handle?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>not well.. it's hard to make those things go straight, they always wobble</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>alright well time for me to eat... I'll chat with you later</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>did you disassemble the chairs and realign the wheels?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>later</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>heh no, I'm good with computers not mechanics</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ah well</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I return!
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>that was fast</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>how was gnawing?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>Well I got some splinters from the legbone</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>could be toothpicks</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>doubtful, besides I had ravioli</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>i c</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>said the blind man, as he picked up his hammer and saw</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ohhhhh, golden oldie there</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>you have been listening to my relatives</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>have I? but I got it from my relatives... does that mean we're related?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'><= German/Irish</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'><= french mostly</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>although it's hard to say on my fathers side</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>maybe they talked on the boat over</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>dad won't talk?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>just don't know much beyond my grandparents on that side</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ah</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I also have some United Empire Loyalist and some Mohawk</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>which kind of rounds things out, but no French</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>there was some kind of a disagreement, and that generation lost contact with each other and my grandmother doesn't know much about the family history</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>happens a lot</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>can often explain the move across the ocean</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>actually they were all in the US at the time. I don't know the details of it, but it had to do with land</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>usual stuff</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>yup, many disagreements over land</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>my ants got their panties in a bunch when my granny died</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>people are wierd like that... you'd think they'd argue over something important</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>your 'aunts' maybe?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>like operating systems</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>exactly</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>no his ants</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>not that is worth having an argument about</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>he likes t dress them up</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>aunts yes</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>s/not/now</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>ants are much more peaceful creatures</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>clothes for insects?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>clearly Linux is king and Torvalds is God am I right?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>sing it baby</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>torvalds is pretty much a 'genius'
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>linux AND git? in the same life?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>the man rocks <3</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>exactly</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>indeed :-P</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>well that was quick</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>next topic?
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>not near as much fun in this room</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>editors?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>hahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>we all use vim</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>again, we will be done soon</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>it's a lot more fun to open that discussion with some C# programmers</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I bet</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>have you seen this vimcast? http://vimcasts.org/episodes/running-vim-within-irb/
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I had no idea you could do that :-)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>worth noting: git is all c because linus thought c++ was a stupid idea (and it is)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I've seen both vim and emacs</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'><--- learned programming in C++
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>didn't learn pure C till college</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>jim weirich uses emacs+irb I think</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>pure c is awesome</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>is that a Scottish accent?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I jab at c once in a while</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I like the way he pronounces 'short'
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>tried doing some ncurses things</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I actually have no beef with C++, the main critism I've seen is that it makes it too easy to write bad code</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>and bad code can be written in any language</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>if it's scottish it's very very mild</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I'm so uncultured I don't even try to identify accents</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>if they say 'eh' a lot I just assume Canadian, past that I dunno ;-)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>hahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>Volundr: linus meant mostly that OOP was a bad idea for what he wanted to do with git</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>you left out out and about</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>too much overhead and too much complexity</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>c++ is good</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>especially with boost, can be quite the mindfuck</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>it your screencast start playing stairway to heaven?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it did! :O</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>what was that about</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>did</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I think it was to ilustrate bliss</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>you are kidding me</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>that was scary</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>hyahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I think we can all agree that clearly brainfuck(http://www.muppetlabs.com/~breadbox/bf/) is the ultimate language</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>a midi, great</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>Volundr: whitespace is way more stupid, but brainfuck as... a weird appeal</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>brainfuck is actually a great academic idea</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>what better way to get pointers, right?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I'm still dealing with a vimcast by a Scottish guy who thought that Stairway to Heaven was a good selection as background music</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it was even background music</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>that's the most jarring part</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>+ it teaches Turing machines... Theory of Computation anyone?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I thought I had something else running</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>true</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I'm going to do session assignments tonight, if I don't pass out first</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Compleat Rubyist went awesome but totally draining</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>glad you had a good training session</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>it is after 10pm, why not wait to assign until tomorrow</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>not much is going to change for us between now and then</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>anteaya: 10pm where? :)
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>We have people in most timezones</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>10pm eastern</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>sorry, you are correct</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I have the opposite problem</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>are you not still in Chigago? same time zone, no?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I will send people times in UTC for local meetings</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Chicago, IIRC, is "sometimes the same time"
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>but right now it's CDT</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>yeah, UTC works the better</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>But for a local meeting it's pointless :)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>ah, you are back home?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>true</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>No... I'm in Chicago</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>UTC-5</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>EDT is UTC-4</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>attention, non-zep fans This is a relaxing, blissful song: http://www.youtube.com/user/ledzeppelin?blend=1&ob=4#p/search/0/o-tT62bpYlU</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>locks: it looks like you gots your cron working,eh?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>yeps</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>little help here and there</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>and I got it working</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>Stairway to Heaven brings back frightening memories of grade nine dances and dark gymnasiums with teachers lined up against the walls watching you dance</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>haha</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I never went to my nine grade dance</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>can you add something like: msg.match(/^:(.*)!.*<span style='color: grey'>#rmu-general</span> (.*))
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>mainly because it was stupid as sin</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I was a nerd... what's a dance? ;-)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>yup, and every single one finished off with Stairway to Heaven</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>and then pull name, message = match_obj[1], match_obj[2]
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>or whatever it is</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>this output is super noisy</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>shhhh, Volundr you only dreamed it, roll over and go back to sleep</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>locks: also, timestamps plz</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>there's a timestamp somewhere in that string</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Not inwhatyou've been pulishing.
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>wow... keyboard fail</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>it's easier to tell me which fields you want down</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>not in what you've been publishing</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>username, timestamp and action?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>make it look like this</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>21:26 < locks> username, timestamp and action?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>ok no prob</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>For right now. Later I'm going to capture all of it and add filters</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I just want this thing to be sane to read for the time being</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>bah who needs filters? that's what grep is for ;-)
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>thanks a ton for doing this... great to have logging</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>Volundr, I love the syntax, have you written anything in bf?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Volundr: I want them for pulling out transcripts for particular time periods</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>so I can pull a class session transcript and save it</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>Me? oh god no. Visual Basic is about as masochistic as I get.
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>but for the moment, I just want it so I can keep tabs on all the insane energy (and kibitizing) going on while I'm away :)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>absolutely, we need all the facts about Zep all together in one place</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>locks: if you haven't posted this to the mailing list yet, please do.
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I'll also add it to the welcome message</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>is there a windows alternative to kron?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>*cron</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>Scheduled Tasks</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>Start->Control Panel->Administrative Tools->Task Scheduler</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>man... I'm excited about RMU... but training money is good :)
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>may vary slightly depending on your version of Windows</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>I'm excited too. I don't know that I've learned much yet, but I've certainly met some interesting people</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Volundr: well... we haven't started yet :)
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>or at least I haven't</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>you folks have</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>Volundr: ty</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>Wait, you mean you didn't plan this whole thing just so we could BS in IRC?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>so long as you give me positive reviews, go for it :)
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>anyway, the sessions will be run in a separate chan, so I'm fine with this being our loud hallway</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>check this</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>bf's Hello World</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Brainfuck Mendicant University</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>hahahaha</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>ooh, if anyone wants a challenge, implement brainfuck in Ruby</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>Once upon a time I saw a Brainfuck interpreter in Brainfuck</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>It's an easy task, if you go the C code generation route</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>combine that with Ruby inline</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>hmmm... sounds interesting, but not tonight</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>hehe, I am the worst instructor ever. Encouraging evil instead of good</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>omg</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>soon this too >.< can be code</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>tonight I'm off to play poker and discuss game design</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>use wilson and do inline asm</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>have fun at the poker table</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>honestly, I'll have more fun discussing design... I'm not much of a card player</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>okay, have fun discussing design, I'm all for playing to your strengths</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I've several friends who do interesting coding to support their poker habits</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>do tell</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>heh, well the game design has nothing to do with the poker... other than we haven't decided what we're going to design yet and need something to do while we discuss it</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>one guy uses screen scraping to compute odds on like, 10 simultaneous tables.
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>and does some other number crunching</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I don't know much about poker, actually</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>except that two of my friends make a living off of it</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>poker <3</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>Volundr, well sometimes it's nice to have an excuse to share company with people you like</div>
+</div>
+<div class='container'>
+  <div class='nick'>Volundr</div>
+  <div class='text'>Alrighty lady and gentlemen. I'm off. Have a nice morning/afternoon/evening/night (whatever the case may be)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>night Volundr</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>seacreature, is what they are doing legal?
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>or is that a bad question?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>anteaya: I think some things are in a gray area, obviously. But the other friend I suggested did it completely above board.
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>He wrote some code to analyze his games, but no automation</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>seacreature, cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>babot</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>yayz</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>locks: was that an intentional takedown?
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I need to move him out of the laptop</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>sorta, I changed the folder and forgot about the bot lol</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I can actually run him if you put it up on github for me. Just extract the chan and password into a config file you put into .gitignore</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I'll just nohup him on my vps</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>if you add me as a collaborator to your heroku app, I can push to it for now</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I'll do that tomorrow over lunch</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>then again, now that I think about it, i'm not excited about keeping him alive :)
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>for now, bedtime</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>cool. Great work bringing this live</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>thanks</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>np</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>I'll try cleaning it up and adding some func</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>night locks</div>
+</div>
+<div class='container'>
+  <div class='nick'>locks</div>
+  <div class='text'>cheers []s</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>anteaya: I actually will delay on selection announcements until these folks accept invites, but I'll do the work tonight</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>cool</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>if folks in here want to know roughly where they'll end up, I can let you know</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>fair enough, I can wait, I am practising patience</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I'm told it is a virtue</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>did you fill all the spots?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>no. still reviewing these last 18, but if all pass that's 87</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>But I only said I wanted to fill 5 sessions because of the high application rate</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I didn't want to hold 20 slots for 280 people</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>out of the over 300 people who signed up for the exam, how many submissions did you have?
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>so I estimated about 33% response rate optimisticly</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>87</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>wow</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I have not turned anyone down who actually submitted something coherent</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>good to know</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>there was one gist that said "I give up" and that's all it said</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>that one I failed :)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>poor person</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I did email them and encouraged them to keep trying</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>no response</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>they should have at least given it a bit of a try</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>wow</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I think a lot of people didn't submit thinking I'd be harsh at reviewing these things</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>level three basically said, plug in these keywords to a search engine and paste the urls that outpu</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I wasn't at all, I mainly want to make sure that since we have limited resources and small sizes of sessions, that we don't fill seats with lurkers</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>maybe, but they must have stopped reading before they got to the three levels of submission</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I can see by the activity within our group what a good idea that was</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>exactly</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>and on the email list, you made it clear that participants must participate</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking_</div>
+  <div class='text'>i think it was a great idea</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>whatever level they are able to</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>evening the</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>the</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>t e h</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>there</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>so i completely fail at one of the koans</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I am happy, we can run August, September, October, and November, and January with what we have now</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>dang spell correction</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>seacreature, perfect</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>so I can basically do another exam in November some time</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>if things are working well</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>t e h : to fail today is to try again tomorrow</div>
+</div>
+<div class='container'>
+  <div class='nick'>tehviking</div>
+  <div class='text'>i'm walking away for now</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>seacreature, that would be about right for timing</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>tehviking_: good idea</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>often helps</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>the hacker guide link you gave is interesting</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I will be talking at some conferences about this idea, most likely</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Based on our successes or failures :)
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>No matter what, RMU will be an interesting story</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I agree</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>having a small group is important</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>rubylearning had over 200 people</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>it was madness</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>and every day somebody wanted the course structure changed for some reason or other</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>rubylearning, though a great idea, is very different than what I have in mind.
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I have a specific style to the way I do things, and the course will reflect that</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>oh yes and I'm so glad</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>but I am also a big proponent of self-organization</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>so I will provide a unifying thread, and everyone else can provide the energy and creativity to run with it</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>was good for meeting people, and for learning a few things, but I got burned out fast</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I tried hard to answer every message personally and I couldn't do it</div>
+</div>
+
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>looks like it is a plan that is falling into place</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>What I like is what we have here... in the sense that we have a superstructure</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>But that the actual sessions will be nicely focused</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>and we are good at entertaining ourselves</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>indeed, I can see that :)
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>so we can talk in the hallway until it is time for our class</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>:D</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I was tempted to extend deadline, but it would sort of defeat the purpose of the exam</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>I wanted to see that people could complete something in a week, since that's what we'll hope to see in the sessions</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>Bringing people in via an exam in November will see a nice influx of new folks mixing with alumni</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>I can see that</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>and it also leaves a good potential for level 2 sessions in the winter, maybe</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>and you should have a sense by then about where level 2 fits in and how it should work</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>we'll see</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>jinx</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>hehe</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>my dog is telling me it is time for me to go to bed, she has already headed out without me</div>
+</div>
+<div class='container'>
+  <div class='nick'>anteaya</div>
+  <div class='text'>nighty night</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'>BTW... those who have a lot of time on their hand and want to learn about ultra-subtle design... read the Prawn list :)</div>
+</div>
+<div class='container'>
+  <div class='nick'>seacreature</div>
+  <div class='text'><span style='color: red'></span> we're all a bunch of neckbeards.</div>
+</div>
+<div class='container'>
+  <div class='nick'>lolocks</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>babot_</div>
+  <div class='text red'>JOIN</div>
+</div>
+<div class='container'>
+  <div class='nick'>lolocks</div>
+  <div class='text red'>PART</div>
+</div>
