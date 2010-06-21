@@ -1,7 +1,7 @@
-require 'rubygems'
 require 'sinatra/base'
 require 'sinatra/session'
 require 'rest_client'
+require 'json'
 
 class RMUirc < Sinatra::Base
 
