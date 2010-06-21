@@ -8,30 +8,31 @@ class RMUirc < Sinatra::Base
   configure do
     register Sinatra::Session
     set :session_fail, '/login'
-    set :session_secret, 'maxim'
+    set :session_secret, 'tryitmate'
   end
   
   get '/' do
     session! # redirects to :session_fail if not logged in
-    feed = JSON.parse RestClient.get 'http://rmuapi.heroku.com/irc/log'
+    feed = JSON.parse(RestClient.get 'http://rmuapi.heroku.com/irc/log')
 
     html = '<a href="/logout">logout</a> <a href="/archive.html">old log</a></p>'
-    
+
     feed.each do |row|
-      time = Time.parse row[:timestamp]
+      time = Time.parse row['timestamp']
+      
+      html += "<span style='color: grey;'>#{time.mon}\/#{time.day} " + row['timestamp'].gsub(/\d\d:\d\d/).first + "</span>"
 
-      log += "<span style='color: grey;'>#{time.mon}\/#{time.day} " + row[:timestamp].gsub(/\d\d:\d\d/).first + "</span>"
-
-      if row[:symbol].eql? 'privmsg'
-        log += "&nbsp;<span style='color: blue'>#{row[:nick]}</span>&nbsp;#{row[:text]}"
+      if row['symbol'].eql? 'privmsg'
+        html += "&nbsp;<span style='color: blue'>#{row['nick']}</span>&nbsp;#{row['text']}"
       else
-        log += " ** <span style='color: blue'>#{row[:nick]}</span> <span style='color: red'>#{row[:symbol]}ed</span> #{row[:text]}"
+        html += " ** <span style='color: blue'>#{row['nick']}</span> <span style='color: red'>#{row['symbol']}ed</span> #{row['text']}"
       end
       
-      log += "<br />"
+      html += "<br />"
     end
-    
-    log
+
+  html
+
   end
 
 ###
