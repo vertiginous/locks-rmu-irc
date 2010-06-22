@@ -16,7 +16,7 @@ class RMUirc < Sinatra::Base
       "<div style='margin: 1em; padding: 1em; width: auto; background: orange; font-family: helvetica, arial;'>
         <p><h1><a href='/latest'>REcENT LOG</a></h1></p>
         <p><h1><a href='/full'>FULL LOG</a></h1></p>
-        <p><h1><a href='/archive.html'>OLD LOG</a></h1></p>
+        <p><h1><a href='/old'>OLD LOG</a></h1></p>
       </div>"
     end
   end
@@ -27,14 +27,9 @@ class RMUirc < Sinatra::Base
     base_uri 'http://rmuapi.heroku.com/'
     format :json
   end
-  
-  get '/' do
-    menu
-  end
 
-
-  # LOGIN LOGIc
-  #
+## LOGIN LOGIc
+#
   get '/login' do
     '<form name="input" action="login" method="POST">
       <input type="text" name="secret" value="our little secret" />
@@ -52,22 +47,32 @@ class RMUirc < Sinatra::Base
       redirect '/login'
     end
   end
-  #
-  # LOGIN LOGIc
-  
+##
   get '/logout' do
     session_end!
 
     redirect '/'
   end
+#
+## LOGIN LOGIc
 
-  get '/:filter' do
+  get '/' do
+    menu
+  end
+  
+  get '/old' do
+    session!
+
+    html :archive
+  end
+  
+  get '/log/:filter' do
     session!
 
     feed = Log.get '/irc/log'
     feed = feed.last 200 if params[:filter] == 'latest'
 
-    html = menu
+    html = '<style>body {font-family: helvetica; arial; font-size: 1.2em; margin-left: 2em;}</style><p><a href="/">back</a></p>' + menu
 
     feed.each do |row|
       next if row.nil?
