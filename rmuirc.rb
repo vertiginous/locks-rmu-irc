@@ -9,7 +9,7 @@ class RMUirc < Sinatra::Base
   set :public, File.expand_path( File.dirname(__FILE__) + '/public')
 
   set :session_fail, '/login'
-  set :session_secret, 'lol'
+  set :session_secret, 'babot is my master'
   
   helpers do
     def menu
@@ -72,7 +72,7 @@ class RMUirc < Sinatra::Base
     feed = Log.get '/irc/log'
     feed = feed.last 200 if params[:filter] == 'latest'
 
-    html = '<style>body {font-family: helvetica; arial; font-size: 1.2em; margin-left: 2em;}</style><p><a href="/">back</a></p>' + menu
+    html = '<style>body {font-family: helvetica; arial; font-size: 1.2em; margin-left: 2em;}</style>' + menu
 
     feed.each do |row|
       next if row.nil?
