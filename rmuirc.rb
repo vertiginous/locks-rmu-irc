@@ -66,7 +66,7 @@ class RMUirc < Sinatra::Base
     html :archive
   end
   
-  get '/log/:filter' do
+  get '/:filter' do
     session!
 
     feed = Log.get '/irc/log'
