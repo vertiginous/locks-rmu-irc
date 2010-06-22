@@ -1,48 +1,73 @@
 require 'sinatra/base'
 require 'sinatra/session'
-require 'rest_client'
-require 'json'
+require 'httparty'
 
 class RMUirc < Sinatra::Base
 
   register Sinatra::Session
-  set :session_fail, '/login'
-  set :session_secret, 'mamamia'
+
   set :public, File.expand_path( File.dirname(__FILE__) + '/public')
+
+  set :session_fail, '/login'
+  set :session_secret, 'lol'
   
   helpers do
-    def pretty(filter)
-      
+    def menu
+      "<div style='margin: 1em; padding: 1em; width: auto; background: orange; font-family: helvetica, arial;'>
+        <p><h1><a href='/latest'>REcENT LOG</a></h1></p>
+        <p><h1><a href='/full'>FULL LOG</a></h1></p>
+        <p><h1><a href='/archive.html'>OLD LOG</a></h1></p>
+      </div>"
     end
   end
   
-  get '/da' do
-    feed = JSON.parse RestClient.get('http://rmuapi.heroku.com/irc/log')
-    html = ''
-    
-    i = 1
-    feed.each do |entry|
-      html += i.to_s if entry['timestamp'] == nil
-      i = i.next
-    end
-    
-    html
+  class Log
+    include HTTParty
+
+    base_uri 'http://rmuapi.heroku.com/'
+    format :json
   end
   
   get '/' do
-    "
-      <p><h1><a href='/latest'>REcENT LOG</a></h1></p>
-      <p><h1><a href='/full'>FULL LOG</a></h1></p>
-      <p><h1><a href='/archive.html'>OLD LOG</a></h1></p>
-    "
+    menu
   end
-  
-  get '/:filter' do
-    feed = JSON.parse RestClient.get('http://rmuapi.heroku.com/irc/log')
 
+
+  # LOGIN LOGIc
+  #
+  get '/login' do
+    '<form name="input" action="login" method="POST">
+      <input type="text" name="secret" value="our little secret" />
+      
+      <input type="submit" value="submit" />
+    </form>'
+  end
+  post '/login' do
+    if params[:secret].eql? 'rmu1337'
+      session_start!
+      session[:secret] = params[:secret]
+      
+      redirect '/'
+    else
+      redirect '/login'
+    end
+  end
+  #
+  # LOGIN LOGIc
+  
+  get '/logout' do
+    session_end!
+
+    redirect '/'
+  end
+
+  get '/:filter' do
+    session!
+
+    feed = Log.get '/irc/log'
     feed = feed.last 200 if params[:filter] == 'latest'
 
-    html = '<style>body {font-family: helvetica; arial; font-size: 1.2em; margin-left: 2em;}</style><p><a href="/">back</a></p>'
+    html = menu
 
     feed.each do |row|
       next if row.nil?
@@ -61,35 +86,5 @@ class RMUirc < Sinatra::Base
     html
     
   end
-
-###
-# session management
-#
-  get '/login' do
-    '<form name="input" action="login" method="POST">
-      <input type="text" name="secret" value="our little secret" />
-      
-      <input type="submit" value="submit" />
-    </form>'
-  end
-  
-  post '/login' do
-    if params[:secret].eql? 'rmu1337'
-      session_start!
-      session[:secret] = params[:secret]
-      
-      redirect '/'
-    else
-      redirect '/login'
-    end
-  end
-  
-  get '/logout' do
-    session_end!
-
-    redirect '/'
-  end
-#
-###
 
 end
