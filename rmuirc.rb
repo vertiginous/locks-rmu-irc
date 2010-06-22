@@ -5,10 +5,16 @@ require 'json'
 
 class RMUirc < Sinatra::Base
 
-    register Sinatra::Session
-    set :session_fail, '/login'
-    set :session_secret, 'mamamia'
-    set :public, '/public'
+  register Sinatra::Session
+  set :session_fail, '/login'
+  set :session_secret, 'mamamia'
+  set :public, File.expand_path( File.dirname(__FILE__) + '/public')
+  
+  helpers do
+    def pretty(filter)
+      
+    end
+  end
   
   get '/da' do
     feed = JSON.parse RestClient.get('http://rmuapi.heroku.com/irc/log')
@@ -31,12 +37,14 @@ class RMUirc < Sinatra::Base
     "
   end
   
-  get '/latest' do
+  get '/:filter' do
     feed = JSON.parse RestClient.get('http://rmuapi.heroku.com/irc/log')
+
+    feed = feed.last 200 if params[:filter] == 'latest'
 
     html = '<style>body {font-family: helvetica; arial; font-size: 1.2em; margin-left: 2em;}</style><p><a href="/">back</a></p>'
 
-    feed.last(200).each do |row|
+    feed.each do |row|
       next if row.nil?
       
       html += "<span style='color: grey;'>#{Time.parse( row['timestamp'].to_s ).strftime('%b %d, %H:%M:%S')}</span>"
@@ -52,33 +60,6 @@ class RMUirc < Sinatra::Base
     
     html
     
-  end
-
-  get '/full' do
-    session!
-
-    feed = JSON.parse RestClient.get('http://rmuapi.heroku.com/irc/log')
-
-    html = '<h1><a href="/">back</a></h1>'
-
-    feed.each do |row|
-      next if row.nil?
-
-      time = Time.parse row['timestamp'].to_s
-      
-      html += "<span style='color: grey;'>#{time.mon}\/#{time.day} " + row["timestamp"].to_s.gsub(/\d\d:\d\d/).first + "</span>"
-
-      if row["symbol"] == 'privmsg'
-        html += "&nbsp;<span style='color: blue'>#{row["nick"]}</span>&nbsp;#{row["text"]}"
-      else
-        html += " ** <span style='color: blue'>#{row["nick"]}</span> <span style='color: red'>#{row["symbol"]}ed</span> #{row["text"]}"
-      end
-      
-      html += "<br />"
-    end
-
-    html
-
   end
 
 ###
