@@ -63,7 +63,7 @@ class RMUirc < Sinatra::Base
   get '/old' do
     session!
 
-    html :archive
+    menu + File.open('archive.html') {|f| f.read }
   end
   
   get '/:filter' do
