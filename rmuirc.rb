@@ -5,20 +5,18 @@ require 'json'
 
 class RMUirc < Sinatra::Base
 
-  configure do
     register Sinatra::Session
     set :session_fail, '/login'
-    set :session_secret, 'tryitmate'
-  end
+    set :session_secret, 'mamamia'
   
   get '/' do
-    session! # redirects to :session_fail if not logged in
+    session!
     feed = JSON.parse(RestClient.get 'http://rmuapi.heroku.com/irc/log')
 
     html = '<a href="/logout">logout</a> <a href="/archive.html">old log</a></p>'
 
     feed.each do |row|
-      time = Time.parse row['timestamp']
+#      time = Time.parse row['timestamp']
       
       html += "<span style='color: grey;'>#{time.mon}\/#{time.day} " + row['timestamp'].gsub(/\d\d:\d\d/).first + "</span>"
 
@@ -31,7 +29,7 @@ class RMUirc < Sinatra::Base
       html += "<br />"
     end
 
-  html
+    html
 
   end
 
