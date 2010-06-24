@@ -1,5 +1,8 @@
+require 'rubygems'
+
 require 'sinatra/base'
 require 'sinatra/session'
+
 require 'httparty'
 
 class RMUirc < Sinatra::Base
@@ -10,17 +13,12 @@ class RMUirc < Sinatra::Base
 
   set :session_fail, '/login'
   set :session_secret, 'babot is my master'
-  
+
   helpers do
-    def menu
-      "<div style='margin: 1em; padding: 1em; width: auto; background: orange; font-family: helvetica, arial;'>
-        <p><h1><a href='/latest'>REcENT LOG</a></h1></p>
-        <p><h1><a href='/full'>FULL LOG</a></h1></p>
-        <p><h1><a href='/old'>OLD LOG</a></h1></p>
-      </div>"
-    end
+    include Rack::Utils
+    alias_method :h, :escape_html
   end
-  
+
   class Log
     include HTTParty
 
@@ -57,9 +55,9 @@ class RMUirc < Sinatra::Base
 ## LOGIN LOGIc
 
   get '/' do
-    menu
+    erb :index
   end
-  
+
   get '/old' do
     session!
 
@@ -68,28 +66,10 @@ class RMUirc < Sinatra::Base
   
   get '/:filter' do
     session!
-
-    feed = Log.get '/irc/log'
-    feed = feed.last 200 if params[:filter] == 'latest'
-
-    html = '<style>body {font-family: helvetica; arial; font-size: 1.2em; margin-left: 2em;}</style>' + menu
-
-    feed.each do |row|
-      next if row.nil?
-      
-      html += "<span style='color: grey;'>#{Time.parse( row['timestamp'].to_s ).strftime('%b %d, %H:%M:%S')}</span>"
-
-      if row["symbol"] == 'privmsg'
-        html += "&nbsp;<span style='color: blue'>#{row["nick"]}</span>&nbsp;#{row["text"]}"
-      else
-        html += "&nbsp;&nbsp;&nbsp;&nbsp;</span> <span style='color: red'>#{row["symbol"].to_s.upcase}ED</span> <span style='color: blue'>#{row["nick"]}</span>"
-      end
-      
-      html += "<br />"
-    end
     
-    html
+    @feed = Log.get '/irc/log'
+    @feed = @feed.last 200 if params[:filter] == 'latest'
     
+    erb :logs
   end
-
 end
