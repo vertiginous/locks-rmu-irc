@@ -7,7 +7,7 @@ class RMUirc < Sinatra::Base
 
   register Sinatra::Session
 
-#  set :public, File.expand_path( File.dirname(__FILE__) + '/public')
+  set :public, File.expand_path( File.dirname(__FILE__) + '/public')
   set :session_fail, '/login'
   set :session_secret, 'babot is my'
 
