@@ -1,5 +1,3 @@
-require 'rubygems'
-
 require 'sinatra/base'
 require 'sinatra/session'
 
@@ -9,10 +7,11 @@ class RMUirc < Sinatra::Base
 
   register Sinatra::Session
 
-  set :public, File.expand_path( File.dirname(__FILE__) + '/public')
-
+#  set :public, File.expand_path( File.dirname(__FILE__) + '/public')
   set :session_fail, '/login'
-  set :session_secret, 'babot is my master'
+  set :session_secret, 'babot is my'
+
+  enable :inline_templates
 
   helpers do
     include Rack::Utils
@@ -29,11 +28,7 @@ class RMUirc < Sinatra::Base
 ## LOGIN LOGIc
 #
   get '/login' do
-    '<form name="input" action="login" method="POST">
-      <input type="text" name="secret" value="our little secret" />
-      
-      <input type="submit" value="submit" />
-    </form>'
+    erb :lili
   end
   post '/login' do
     if params[:secret].eql? 'rmu1337'
@@ -55,7 +50,7 @@ class RMUirc < Sinatra::Base
 ## LOGIN LOGIc
 
   get '/' do
-    erb :index
+    redirect '/latest'
   end
 
   get '/old' do
@@ -73,3 +68,21 @@ class RMUirc < Sinatra::Base
     erb :logs
   end
 end
+
+__END__
+
+@@ login
+%content{ :style => 'text-align: center'}
+  %form{ :name => 'input', :action => 'login', :method => 'POST'}
+    %input{ :type => 'text', :name => 'secret', :value => 'our little secret'}
+
+    %input{ :type => 'submit', :value => 'submit'}
+
+@@ lili
+<div id='content' style='text-align: center'>
+  <form name='input' action='login' method='POST'>
+    <input type='text' name='secret' value='our little secret' />
+    
+    <input type='submit' value='submit' />
+  </form
+</div>

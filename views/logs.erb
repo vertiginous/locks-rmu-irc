@@ -2,17 +2,10 @@
 	<div id='content'>
 		<% @feed.each do |row| %>
 			<% next if row.nil? %>
-
 			<div class='message'>
-				<div class='timestamp'>
-					<%= h Time.parse( row['timestamp'].to_s ).strftime('%b %d, %H:%M:%S')%>
-				</div>
-				<div class='username'>
-					<%= h row["nick"]%>
-				</div>
-				<div class='text'>
-					<%= h row["text"]%>
-				</div>
+				<div class='timestamp'><%= h Time.parse( row['timestamp'].to_s ).strftime('%b %d, %H:%M:%S')%></div>
+				<div class='username'><%= h row["nick"]%></div>
+				<div class='text'><%= h row["text"]%></div>
 			</div>
 		<% end %>
 	</div>
