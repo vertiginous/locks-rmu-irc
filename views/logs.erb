@@ -4,8 +4,13 @@
 			<% next if row.nil? %>
 			<div class='message'>
 				<div class='timestamp'><%= h Time.parse( row['timestamp'].to_s ).strftime('%b %d, %H:%M:%S')%></div>
-				<div class='username'><%= h row["nick"]%></div>
-				<div class='text'><%= h row["text"]%></div>
+				  <% if row['symbol']=='join' or row['symbol']=='part' or row['symbol']=='quit' %>				    
+				    <div class='username'><%= h row["nick"]%></div>
+				    <span style='color: red; font-weight: bold;'><%= h row['symbol'].upcase+'ED' %></span>
+				  <% else %>
+				    <div class='username'><%= h row["nick"]%></div>
+				    <div class='text'><%= h row["text"]%></div>
+				  <% end %>
 			</div>
 		<% end %>
 	</div>
