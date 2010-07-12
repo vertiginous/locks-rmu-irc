@@ -4,7 +4,6 @@ require 'sinatra/session'
 require 'httparty'
 
 class RMUirc < Sinatra::Base
-
   register Sinatra::Session
 
   set :public, File.expand_path( File.dirname(__FILE__) + '/public')
