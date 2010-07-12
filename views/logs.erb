@@ -7,6 +7,12 @@
 				  <% if row['symbol']=='join' or row['symbol']=='part' or row['symbol']=='quit' %>				    
 				    <div class='username'><%= h row["nick"]%></div>
 				    <span style='color: red; font-weight: bold;'><%= h row['symbol'].upcase+'ED' %></span>
+				  <% elsif row['symbol']=='action'.upcase %>
+				    <div class='username' style='font-style: italic'>
+				      <spawn style='color: red; font-weight: bold'>**</spawn>
+				      <%= h row["nick"]%>
+				    </div>
+				    <div class='text' style='font-style: italic'><%= h row["text"]%></div>
 				  <% else %>
 				    <div class='username'><%= h row["nick"]%></div>
 				    <div class='text'><%= h row["text"]%></div>
