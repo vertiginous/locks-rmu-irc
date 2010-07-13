@@ -51,27 +51,26 @@ class RMUirc < Sinatra::Base
 #
 ## LOGIN LOGIc
 
-  get '/' do
-    redirect '/latest'
-  end
-
   get '/old' do
     session!
 
     menu + File.open('archive.html') {|f| f.read }
   end
   
-  get '/:filter' do
+  get '/' do
     session!
-    page = (params[:page]) ? params[:page] : 1
 
-    @feed = Log.get '/irc/log'
-    @feed = @feed.last 200 if params[:filter] == 'latest'
+    @feed = Log.get('/irc/log') if !@feed
+
+    page_size = 50
+    page = (params[:page]) ? params[:page] : last=(@feed.size/page_size).succ
+    
+    @feed = Log.get('/irc/log') if last
 
     erb :logs, :locals => { 
       :collection => @feed.paginate({
-      :page => page, 
-      :per_page => 50
+      :page => page,
+      :per_page => page_size
     }) 
   }
   end
