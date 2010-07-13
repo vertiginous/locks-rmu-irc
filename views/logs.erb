@@ -1,5 +1,5 @@
 <% if !@feed.nil? then %>
-<%= leaf(collection) %>
+<%= leaf(collection, :previous_label => 'Older', :next_label => 'Newer') %>
 	<div id='content'>
 		<% collection.each do |row| %>
 			<% next if row.nil? %>
