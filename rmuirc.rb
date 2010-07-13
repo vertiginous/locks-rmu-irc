@@ -2,6 +2,9 @@ require 'sinatra/base'
 require 'sinatra/session'
 
 require 'httparty'
+require 'leaf'
+
+include Leaf::ViewHelpers::Base
 
 class RMUirc < Sinatra::Base
   register Sinatra::Session
@@ -60,12 +63,19 @@ class RMUirc < Sinatra::Base
   
   get '/:filter' do
     session!
-    
+    page = (params[:page]) ? params[:page] : 1
+
     @feed = Log.get '/irc/log'
     @feed = @feed.last 200 if params[:filter] == 'latest'
-    
-    erb :logs
+
+    erb :logs, :locals => { 
+      :collection => @feed.paginate({
+      :page => page, 
+      :per_page => 50
+    }) 
+  }
   end
+
 end
 
 __END__
